@@ -1,6 +1,6 @@
 {
   "name": "wxent-api-redis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "微信企业号API，使用Redis保存AccessToken",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/nagucc/wxent-api-redis",
   "dependencies": {
-    "access-token-redis": "^1.0.2",
+    "access-token-redis": "^1.0.3",
     "wechat-enterprise-api": "^0.1.1"
   }
 }
