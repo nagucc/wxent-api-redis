@@ -1,6 +1,6 @@
 {
   "name": "wxent-api-redis",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "微信企业号API，使用Redis保存AccessToken",
   "main": "index.js",
   "scripts": {
