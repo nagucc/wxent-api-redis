@@ -7,4 +7,16 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-export Greeting from './Greeting.js';
+class Greeting {
+
+  constructor(name) {
+    this.name = name || 'Guest';
+  }
+
+  hello() {
+    return `Welcome, ${this.name}!`;
+  }
+
+}
+
+export default Greeting;
