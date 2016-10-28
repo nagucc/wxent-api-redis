@@ -1,7 +1,6 @@
 var API = require('wechat-enterprise-api');
 var AccessToken = require('access-token-redis');
 
-
 module.exports = function (corpId, secret, agentId, redis_host, redis_port) {
 
     /*
