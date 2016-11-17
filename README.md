@@ -4,11 +4,20 @@
 ## 示例
 
 ```
+import WxApi from 'wxent-api-redis';
 
-var API = require('wxent-api-redis');
-var wxapi = API('corpId', 'secret', agentId, 'redis.host, 'redis.port');
-wxapi.getUser(msg.FromUserName, function (err, user) {
+const wxapi = new WxApi('corpId', 'secret', agentId, 'redis://localhost:6379');
+// 返回一个'wechat-enterprise-api'的api对象
+// 详见：http://doxmate.cool/node-webot/wechat-enterprise-api/api.html#api_api_common
+const client = wxapi.getClient();
+client.getUser(msg.FromUserName, function (err, user) {
 
 });
 
 ```
+
+
+## CHANGELOG
+
+### v2.0
+1. 重新设计API (BREAKING CHANGE)
